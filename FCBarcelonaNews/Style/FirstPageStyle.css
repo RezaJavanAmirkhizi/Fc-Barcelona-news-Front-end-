@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: #07093E;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    min-height: 5rem;
+    background-color: #131229;
+}
+
+.header .logo{
+    border-right: 0.75px solid rgb(129, 126, 126);
+    padding: 5px;
+}
+
+.header .logo img{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+.header .menu{
+    margin: auto 2rem;
+}
+
+.header .menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.header .menu ul li:nth-child(3n-2) a:hover{
+    color: #fdc52c;
+}
+
+.header .menu ul li:nth-child(3n-1) a:hover{
+    color: #0D47A1;
+}
+
+.header .menu ul li:nth-child(3n) a:hover{
+    color: #C62828;
+}
+
+.header .login{
+    margin: auto 10rem;
+}
+.header .login a{
+    background-color: #fdc52c;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7.8px 50px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.header .login a:hover{
+    color: #C62828;
+}
