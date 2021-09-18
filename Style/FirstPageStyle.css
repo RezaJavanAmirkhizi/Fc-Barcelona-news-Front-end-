@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: #07093E;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    min-height: 5rem;
+    background-color: #131229;
+    border-bottom: #fdc52c groove 0.5px;
+}
+
+.header .logo{
+    border-right: 0.75px solid #fdc52c;
+    padding: 5px;
+}
+
+.header .logo img{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+.header .menu{
+    margin: auto 2rem;
+}
+
+.header .menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+.header .menu ul li:nth-child(even) a:hover{
+    color: #0D47A1;
+}
+
+.header .menu ul li:nth-child(odd) a:hover{
+    color: #C62828;
+}
+
+.header .login{
+    margin: auto 10rem;
+}
+.header .login a{
+    background-color: #fdc52c;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7.8px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.header .login a .fa-user{
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+.header .login a:hover{
+    color: #C62828;
+    background-color: #0D47A1;
+}
+
+.sub1{
+    display: none;
+}
+
+.header .menu ul li:hover .sub1{
+    display: block;
+    margin: 1px;
+    margin-left: -1.5rem;
+    position: absolute;
+}
+
+.header .menu ul li:hover .sub1 ul{
+	display: block;
+	margin: 1px;
+}
+
+.header .menu ul li:hover .sub1 ul li{
+    background-color: #fdc52c;
+    width: 150px;
+    display: block;
+    padding: 10px;
+}
+
+.header .menu ul li:nth-child(even):hover .sub1 ul li {
+    border-bottom: #C62828 2px groove;
+}
+
+
+.header .menu ul li:nth-child(odd):hover .sub1 ul li {
+    border-bottom: #0D47A1 2px groove;
+}
+
+.header .menu ul li:hover .sub1 ul li:last-child{
+    border-bottom: none;
+}
+
+.header .menu ul li:nth-child(even):hover .sub1 ul li a:hover{
+   color: #0D47A1;
+   letter-spacing: 2px;
+}
+
+.header .menu ul li:nth-child(odd):hover .sub1 ul li a:hover{
+    color: #C62828;
+    letter-spacing: 2px;
+ }
+
+.part2{
+    margin: 3rem auto;
+    width: 95%;
+    min-height: 80vh;
+    border: #fdc52c solid 2px;
+    border-radius: 10px;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/08/16/d963b46a-6b92-4c36-b508-d6a2dbf82bbe/2021-08-16-OTRO-BARCELONA-R.-SOCIEDAD-04-min.JPG?width=3200&height=2000");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+ }
+
+ .part2 .p1{
+     height: 45vh;
+     width: 25%;
+     background-image: linear-gradient(to right, #0d47a1, #c62828);
+     border: #fdc52c solid 1px;
+     border-radius: 10px;
+     padding: 15px;
+ }
+
+ .part2 .p1 h3{
+     color: #fff;
+     text-align: left;
+     font-weight: bold;
+     font-size: 22px;
+     margin-top: 10px;
+ }
+ .part2 .p1 h3 span{
+     font-size: 18px;
+ }
+
+.part2 .p1 .result{
+    display: block;
+}
+
+.part2 .p1 .result button{
+    background-color: #fdc52c;
+    width: 200px;
+    height: 50px;
+    margin-left: 3rem;
+    margin-top: 1.75rem;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.part2 .p1 .result button:hover{
+    color: #C62828;
+    background-color: #0D47A1;
+    letter-spacing: 1px;
+}
+
+.part2 .p2{
+    height: 35vh;
+    width: 60%;
+    background-image: linear-gradient(to right, #c62828, #0d47a1);
+    border: #fdc52c solid 1px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2 .p2 .game{
+    background-color: #ffffff;
+    height: 95%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.part2 .p2 .game .time{
+    background-color: #355688;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border-bottom: #fdc52c solid 1px; 
+}
+
+.part2 .p2 .game .time h3{
+    font-size: 22px;
+    margin: auto 10px;
+    color: #fff;
+
+}
+.part2 .p2 .game .time span{
+    font-size: 17px;
+    color: #fff;
+}
+
+.part2 .p2 .game .time span p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.part2 .p2 .game .l-logo{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.part2 .p2 .teams{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    padding: 20px;
+    border-bottom: #fdc52c solid 1px; 
+}
+
+.part2 .p2 .teams .team a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.part2 .p2 .teams .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2 .p2 .teams span{
+    font-size: 20px;
+}
+
+.part2 .p2 .game .details button{
+    background-color: #fdc52c;
+    width: 150px;
+    height: 40px;
+    margin-top: 7.5px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.part2 .p2 .game .details button:hover{
+    color: #C62828;
+    background-color: #0D47A1;
+    letter-spacing: 1px;
+}
+
+.part3{
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    width: 98%;
+    min-height: 100vh;
+    border: #fdc52c solid 2px;
+    background: repeating-linear-gradient(
+      to right,
+     #0D47A1,
+     #0D47A1 20px,
+     #C62828 20px,
+     #C62828 40px
+   );
+   display: grid;
+   grid-gap: 10px;
+   grid-template-areas: 
+   "b1 b1 b2 b2"
+   "b1 b1 b2 b2"
+   "b1 b1 b2 b2"
+   "b1 b1 b3 b3"
+   "b4 b5 b3 b3"
+   "b4 b5 b3 b3";
+   padding: 10px;
+}
+
+.part3 .content{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px;
+}
+
+.part3 .content a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.part3 .content p{
+    color: #ffffff;
+    font-size: 15px;
+    width: 70%
+}
+
+.part3 .content a:hover{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    border-bottom: #fdc52c solid 2px;
+    letter-spacing: 1px;
+
+}
+
+.part3 div{
+    border-radius: 10px;
+    position: relative;
+}
+.part3 .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    border: #fdc52c solid 1px;
+}
+
+.part3 .box1{
+    grid-area: b1;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/f32e24d6-b488-4d1e-9d8e-6d9145c3f82f/2021-09-14_FCBvsBAYERN_26-min.JPG?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.part3 .box2{
+    grid-area: b2;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/28970d0e-cc2e-4ac3-9095-f38bd3f0829c/2021-09-14-BARCELONA-BAYERN-45-min.JPG?width=1200&height=750");
+    background-position: top center;
+    background-size: cover;
+    
+}
+.part3 .box3{
+    grid-area: b3;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/7acbf7ce-7138-4195-afac-d85a0d85f5a1/2021-09-14_FCBvsBAYERN_08-min.JPG?width=1200&height=750");
+    background-position: top center;
+    background-size: cover;
+    
+}
+.part3 .box4{
+    grid-area: b4;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/08/29/0e2d09cd-1efe-44c4-a6cf-176b25fb3d20/mini_2021-08-29_FCBvsGETAFE_11.jpg?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+    
+}
+ .part3 .box5{
+    grid-area: b5;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/22a084c7-785d-4ebd-9b5f-4b5d11a2561f/2021-09-14-BARCELONA-BAYERN-31-min.JPG?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+ }
