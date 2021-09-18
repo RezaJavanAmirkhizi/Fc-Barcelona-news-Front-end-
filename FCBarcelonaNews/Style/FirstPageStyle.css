@@ -297,3 +297,101 @@ body{
     background-color: #0D47A1;
     letter-spacing: 1px;
 }
+
+.part3{
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    width: 98%;
+    min-height: 100vh;
+    border: #fdc52c solid 2px;
+    background: repeating-linear-gradient(
+      to right,
+     #0D47A1,
+     #0D47A1 20px,
+     #C62828 20px,
+     #C62828 40px
+   );
+   display: grid;
+   grid-gap: 10px;
+   grid-template-areas: 
+   "b1 b1 b2 b2"
+   "b1 b1 b2 b2"
+   "b1 b1 b2 b2"
+   "b1 b1 b3 b3"
+   "b4 b5 b3 b3"
+   "b4 b5 b3 b3";
+   padding: 10px;
+}
+
+.part3 .content{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px;
+}
+
+.part3 .content a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.part3 .content p{
+    color: #ffffff;
+    font-size: 15px;
+    width: 70%
+}
+
+.part3 .content a:hover{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    border-bottom: #fdc52c solid 2px;
+    letter-spacing: 1px;
+
+}
+
+.part3 div{
+    border-radius: 10px;
+    position: relative;
+}
+.part3 .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    border: #fdc52c solid 1px;
+}
+
+.part3 .box1{
+    grid-area: b1;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/f32e24d6-b488-4d1e-9d8e-6d9145c3f82f/2021-09-14_FCBvsBAYERN_26-min.JPG?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.part3 .box2{
+    grid-area: b2;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/28970d0e-cc2e-4ac3-9095-f38bd3f0829c/2021-09-14-BARCELONA-BAYERN-45-min.JPG?width=1200&height=750");
+    background-position: top center;
+    background-size: cover;
+    
+}
+.part3 .box3{
+    grid-area: b3;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/7acbf7ce-7138-4195-afac-d85a0d85f5a1/2021-09-14_FCBvsBAYERN_08-min.JPG?width=1200&height=750");
+    background-position: top center;
+    background-size: cover;
+    
+}
+.part3 .box4{
+    grid-area: b4;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/08/29/0e2d09cd-1efe-44c4-a6cf-176b25fb3d20/mini_2021-08-29_FCBvsGETAFE_11.jpg?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+    
+}
+ .part3 .box5{
+    grid-area: b5;
+    background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/22a084c7-785d-4ebd-9b5f-4b5d11a2561f/2021-09-14-BARCELONA-BAYERN-31-min.JPG?width=1200&height=750");
+    background-position: center;
+    background-size: cover;
+ }
