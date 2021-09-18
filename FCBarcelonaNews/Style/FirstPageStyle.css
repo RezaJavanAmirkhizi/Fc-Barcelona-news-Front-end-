@@ -139,8 +139,8 @@ body{
  }
 
 .part2{
-    margin: 3rem auto;
-    width: 95%;
+    margin: 1rem auto;
+    width: 98%;
     min-height: 80vh;
     border: #fdc52c solid 2px;
     border-radius: 10px;
@@ -292,7 +292,7 @@ body{
 }
 
 .part3{
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     border-radius: 10px;
     width: 98%;
     min-height: 100vh;
