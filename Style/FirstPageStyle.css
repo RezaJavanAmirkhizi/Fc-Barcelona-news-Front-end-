@@ -39,6 +39,7 @@ body{
     min-height: 5rem;
     background-color: #131229;
     border-bottom: #fdc52c groove 0.5px;
+    align-items: center;
 }
 
 .header .logo{
@@ -46,14 +47,8 @@ body{
     padding: 5px;
 }
 
-.header .logo img{
-    position: relative;
-    top: 10px;
-    right: 5px;
-}
-
 .header .menu{
-    margin: auto 2rem;
+    width: 55%;
 }
 
 .header .menu ul li{
@@ -77,9 +72,6 @@ body{
     color: #C62828;
 }
 
-.header .login{
-    margin: auto 10rem;
-}
 .header .login a{
     background-color: #fdc52c;
     color: #ffffff;
@@ -147,8 +139,8 @@ body{
  }
 
 .part2{
-    margin: 3rem auto;
-    width: 95%;
+    margin: 1rem auto;
+    width: 98%;
     min-height: 80vh;
     border: #fdc52c solid 2px;
     border-radius: 10px;
@@ -156,6 +148,7 @@ body{
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
  }
@@ -181,14 +174,15 @@ body{
  }
 
 .part2 .p1 .result{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .part2 .p1 .result button{
     background-color: #fdc52c;
-    width: 200px;
+    width: 80%;
     height: 50px;
-    margin-left: 3rem;
     margin-top: 1.75rem;
     border-radius: 5px;
     color: #ffffff;
@@ -204,12 +198,11 @@ body{
 
 .part2 .p2{
     height: 35vh;
-    width: 60%;
+    width: 55%;
     background-image: linear-gradient(to right, #c62828, #0d47a1);
     border: #fdc52c solid 1px;
     border-radius: 10px;
     padding: 15px;
-    margin-left: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -283,7 +276,7 @@ body{
 
 .part2 .p2 .game .details button{
     background-color: #fdc52c;
-    width: 150px;
+    width: 60%;
     height: 40px;
     margin-top: 7.5px;
     border-radius: 5px;
@@ -299,7 +292,7 @@ body{
 }
 
 .part3{
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     border-radius: 10px;
     width: 98%;
     min-height: 100vh;
