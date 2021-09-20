@@ -33,6 +33,8 @@ body{
     background-color: #07093E;
 }
 
+
+/*Start nav bar style */
 .header{
     display: flex;
     width: 100%;
@@ -137,7 +139,9 @@ body{
     color: #C62828;
     letter-spacing: 2px;
  }
+ /* End nav bar style */
 
+ /* Start games part styles */
 .part2{
     margin: 1rem auto;
     width: 98%;
@@ -290,7 +294,9 @@ body{
     background-color: #0D47A1;
     letter-spacing: 1px;
 }
+/* End games part style */
 
+/* Start news part style */
 .part3{
     margin: 1rem auto;
     border-radius: 10px;
@@ -305,7 +311,7 @@ body{
      #C62828 40px
    );
    display: grid;
-   grid-gap: 10px;
+   grid-gap: 1rem;
    grid-template-areas: 
    "b1 b1 b2 b2"
    "b1 b1 b2 b2"
@@ -313,7 +319,7 @@ body{
    "b1 b1 b3 b3"
    "b4 b5 b3 b3"
    "b4 b5 b3 b3";
-   padding: 10px;
+   padding: 3rem;
 }
 
 .part3 .content{
@@ -387,4 +393,93 @@ body{
     background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/22a084c7-785d-4ebd-9b5f-4b5d11a2561f/2021-09-14-BARCELONA-BAYERN-31-min.JPG?width=1200&height=750");
     background-position: center;
     background-size: cover;
+ }
+ /* End news part style */
+
+ .part4{
+     width: 98%;
+     margin: 1rem auto;
+     min-height: 80vh;
+     overflow: auto;
+     background-image: linear-gradient(to right, #c62828, #0d47a1);
+     border-radius: 10px;
+     border: #fdc52c solid 2px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .part4 div{
+     border-bottom: 1px solid #fdc52c;
+     width: 100%;
+     padding: 3.5%;
+ }
+
+ .part4 div span{
+     color: #fdc52c;
+     font-size: 22px;
+ }
+ .part4 div a{
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 18px;
+     padding: 2%;
+ }
+
+ .part4 div a:hover{
+     color: #bd8d08;
+     letter-spacing: 1px;
+ }
+
+
+
+ .part4 div:last-child{
+     border-bottom: none;
+ }
+
+ .part4 .title p{
+     text-align: center;
+     color: #fdc52c;
+     font-size: 28px;
+     font-weight: bold;
+     font-style: italic;
+ }
+
+
+
+
+ /* Start main news page */
+ .photo{
+     margin: 1rem auto;
+     margin-bottom: 0;
+     background-position: center;
+     background-size: cover;
+     background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/14/22a084c7-785d-4ebd-9b5f-4b5d11a2561f/2021-09-14-BARCELONA-BAYERN-31-min.JPG?width=1200&height=750");
+     max-width: 98%;
+     height: 80vh;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom: #fdc52c solid 5px;
+ }
+ .description{
+     margin: 0 auto;
+     margin-bottom: 1rem;
+     width: 98%;
+     min-height: 70vh;
+     background-image: linear-gradient(to bottom, #0d47a1, #c62828);
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     padding: 1rem;
+ }
+
+ .description h1{
+     text-align: center;
+     color: #ffffff;
+     font-size: 30px;
+ }
+
+ .description p{
+     width: 50%;
+     margin: 1.5rem auto;
+     font-size: 22px;
+     color: #d1c7c7;
  }
