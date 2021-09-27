@@ -159,7 +159,7 @@ body{
 
  .part2 .p1{
      height: 45vh;
-     width: 25%;
+     flex-basis: 25%;
      background-image: linear-gradient(to right, #0d47a1, #c62828);
      border: #fdc52c solid 1px;
      border-radius: 10px;
@@ -202,7 +202,7 @@ body{
 
 .part2 .p2{
     height: 35vh;
-    width: 55%;
+    flex-basis: 50%;
     background-image: linear-gradient(to right, #c62828, #0d47a1);
     border: #fdc52c solid 1px;
     border-radius: 10px;
@@ -215,7 +215,7 @@ body{
 .part2 .p2 .game{
     background-color: #ffffff;
     height: 95%;
-    width: 33%;
+    flex-basis: 31.5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -445,8 +445,7 @@ body{
  }
 
  .footer{
-    display: grid;
-    grid-template-areas: "a b c c c c c";
+    display: flex;
     grid-gap: 1rem;
     width: 100%;
     height: 25rem;
@@ -456,7 +455,7 @@ body{
  }
 
  .footer .trophies{
-     grid-area: a;
+     flex-basis: 25%;
      height: 100%;
      display: flex;
      flex-direction: column;
@@ -509,7 +508,7 @@ body{
  }
 
  .footer .partners{
-     grid-area: b;
+    flex-basis: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -547,7 +546,7 @@ body{
  }
 
  .footer .social-media{
-     grid-area: c;
+     flex-basis: 50%;
      display: grid;
      grid-gap: 1.25rem;
      grid-template-areas: 
