@@ -159,7 +159,7 @@ body{
 
  .part2 .p1{
      height: 45vh;
-     width: 25%;
+     flex-basis: 25%;
      background-image: linear-gradient(to right, #0d47a1, #c62828);
      border: #fdc52c solid 1px;
      border-radius: 10px;
@@ -202,7 +202,7 @@ body{
 
 .part2 .p2{
     height: 35vh;
-    width: 55%;
+    flex-basis: 50%;
     background-image: linear-gradient(to right, #c62828, #0d47a1);
     border: #fdc52c solid 1px;
     border-radius: 10px;
@@ -215,7 +215,8 @@ body{
 .part2 .p2 .game{
     background-color: #ffffff;
     height: 95%;
-    width: 33%;
+    margin: 2px;
+    flex-basis: 31.5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -445,18 +446,18 @@ body{
  }
 
  .footer{
-    display: grid;
-    grid-template-areas: "a b c c c c c";
+    display: flex;
     grid-gap: 1rem;
     width: 100%;
-    height: 25rem;
     background-color: #131229;
     padding: 0.5rem;
     border-top: #fdc52c groove 0.5px;
+    justify-content: space-between;
+    align-items: center;
  }
 
  .footer .trophies{
-     grid-area: a;
+     flex-basis: 25%;
      height: 100%;
      display: flex;
      flex-direction: column;
@@ -509,13 +510,13 @@ body{
  }
 
  .footer .partners{
-     grid-area: b;
+    flex-basis: 24%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 2rem;
     background: repeating-linear-gradient(
         90deg,
         #FFD53C,
@@ -523,7 +524,6 @@ body{
         #F21651 12.5px,
         #F21651 25px
       );
-    border: #324189 solid 3px;
  }
 
  .footer .partners h2{
@@ -535,11 +535,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem;
  }
 
  .footer .partners a svg{
-     width: 75%;
-     height: 50%;
+     width: 40%;
+     height: 70%;
  }
 
  .footer .partners a:hover{
@@ -547,9 +548,9 @@ body{
  }
 
  .footer .social-media{
-     grid-area: c;
+     flex-basis: 47%;
      display: grid;
-     grid-gap: 1.25rem;
+     grid-gap: 1rem;
      grid-template-areas: 
      "a a a b b b c c c"
      "a a a b b b c c c"
@@ -562,20 +563,30 @@ body{
      flex-direction: column;
      align-items: flex-start;
      justify-content: space-between;
-     padding: 2rem;
+     padding: 1rem;
  }
  .footer .social-media div:hover{
      border: solid 2px #ffffff;
  }
 
- .footer .social-media div i, a, p{
+ .footer .social-media div p{
+     font-size: 13px;
+     color: #131229;
+     font-style: italic;
+     padding: 10px;
+ }
+
+ .footer .social-media div i, a{
      color: #ffffff;
+     padding: 10px;
  }
  .footer .social-media div a:hover{
      color: #fdc52c;
      letter-spacing: 1px;
  }
-
+ .footer .social-media div i{
+     font-size: 2rem;
+ }
  .footer .social-media .media-1{
      grid-area: a;
      background-color: #1897f1;
@@ -649,7 +660,7 @@ body{
      width: 100%;
      min-height: 100vh;
      padding: 2px;
-     overflow: hidden;
+     overflow: auto;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -660,7 +671,7 @@ body{
      max-width: 1020px;
      width: 80%;
      height: 40rem;
-     background-color: #fdc52c;
+     background-color: #0D47A1;
      border-radius: 2rem;
  }
 
@@ -671,7 +682,9 @@ body{
      left: 50%;
      top: 50%;
      transform: translate(-50%, -50%);
-     background-color: #fff;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
  }
 
  .forms-wrap{
@@ -684,12 +697,166 @@ body{
      transition: 0.8s ease-in-out;
  }
 
+ .forms-wrap .sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    outline: none;
+ }
+
+ .forms-wrap .sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    display: none;
+    pointer-events: none;
+ }
+
+ .inner-box .forms-wrap .icon{
+     margin: 0 auto;
+     margin-bottom: 1rem; 
+     height: 18%;
+ }
+
+ .inner-box .forms-wrap .title{
+     margin: 0 auto;
+     height: 25%;
+     text-align: center;
+ }
+
+ .inner-box .forms-wrap .title h2{
+     color: #C62828;
+     font-size: 24px;
+     margin-bottom: .75rem;
+ }
+ .inner-box .forms-wrap .title span{
+     color: #bbb;
+     font-size: 14px;
+     padding: .5rem;
+ }
+
+ .inner-box .forms-wrap .title a{
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+     margin-left: 3px;
+ }
+ .inner-box .forms-wrap .title a:hover{
+     letter-spacing: 1px;
+     color: #ffffff;
+     border-bottom: 1px solid #fdc52c;
+ }
+
+form {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: opacity 0.02s 0.4s;
+    padding: 1rem;
+}
+
+.input-wrap {
+    margin-top: 2rem;
+    position: relative;
+    height: 3rem;
+}
+
+.input-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 15px;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.sign-btn{
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #fdc52c;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 4rem;
+    font-size: 20px;
+}
+
+.sign-btn:hover{
+    color: #C62828;
+    letter-spacing: 1px;
+}
+
+.form-group form p{
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
  .carousel{
      width: 55%;
      height: 100%;
      position: absolute;
      left: 45%;
      top: 0;
-     background-color: #C62828;
      transition: opacity 0.02s 0.4s;
+     background-image: url("https://www.fcbarcelona.com/photo-resources/2021/09/27/96f0dbab-d819-4f94-85f2-c805d0cb7bed/mini_2021-09-27-OTRO-BARCELONA-LEVANTE-02.JPG?width=1200&height=750");
+     background-size: cover;
+     background-position: center;
+     text-align: center;
+     padding: 1.5rem;
+     border-radius: 2rem; 
  }
+
+ .carousel h1{
+     color: #C62828;
+     margin: 2rem;
+ }
+
+ .carousel li{
+     text-align: left;
+     margin: 2rem;
+     color: #fdc52c;
+     font-size: 20px;
+ }
+
+ main.sign-up-mode .forms-wrap {
+    left: 55%;
+  }
+  
+  main.sign-up-mode .carousel {
+    left: 0%;
+  }
+
+  main.sign-up-mode .sign-in {
+    display: none;
+    pointer-events: none;
+  }
+  
+  main.sign-up-mode .sign-up {
+    display: block;
+    pointer-events: all;
+  }
