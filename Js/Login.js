@@ -19,3 +19,4 @@ inputs.forEach((inp) => {
       console.log("hi")
     });
   });
+
